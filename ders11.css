@@ -1,0 +1,9 @@
+#inpu{
+width: 150px;
+height: 10px;
+}
+#tabl{
+  width: auto;
+  height: auto;
+  border: 1px solid black;
+}

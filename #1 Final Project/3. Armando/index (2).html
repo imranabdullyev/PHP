@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" name="name" content="content">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel='stylesheet' href='css/style.css' />
+  <script type="text/javascript" src="script/jquery-1.12.1.js"></script>
+</head>
+
+<body>
+<div class="header">
+	<div class="container">
+		<div class="col-md-4"><h2>Samir Kerimov<h2></div>
+		<div class="pull-right  paddingContain">
+			<ul class="nav nav-pills">
+  				<li role="presentation" class="active"><a name=".all" href="#">All</a></li>
+  				<li role="presentation"><a  name=".consumer" href="#">Consumer</a></li>
+  				<li role="presentation"><a name=".mobile" href="#">Mobile</a></li>
+  				<li role="presentation"><a name=".commerce" href="#">Commerce</a></li>
+  				<li role="presentation"><a name=".enterprise" href="#">Enterprise</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- Header end -->
+<div class="verticalSpace"></div>
+<div class="main">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4"><div class="imgDiv consumer all"><img src="images/p1.jpg"></div></div>
+			<div class="col-md-4"><div class="imgDiv consumer all"><img src="images/p2.jpg"></div></div>
+			<div class="col-md-4"><div class="imgDiv consumer all"><img src="images/p3.jpg"></div></div>
+		</div>
+		<div class="verticalSpace"></div>
+		<div class="row">
+			<div class="col-md-4"><div class="imgDiv mobile all"><img src="images/p4.jpg"></div></div>
+			<div class="col-md-4"><div class="imgDiv commerce all"><img src="images/p5.jpg"></div></div>
+			<div class="col-md-4"><div class="imgDiv enterprise all"><img src="images/p6.jpg"></div></div>
+		</div>
+		<div class="verticalSpace"></div>
+		<div class="row">
+			<div class="col-md-4"><div class="imgDiv enterprise all"><img src="images/p7.jpg"></div></div>
+			<div class="col-md-4"><div class="imgDiv enterprise all"><img src="images/p8.jpg"></div></div>
+			<div class="col-md-4"><div class="imgDiv commerce all"><img src="images/p9.jpg"></div></div>
+		</div>
+	</div>
+</div>
+<!-- Main end -->
+<div class="verticalSpace"></div>
+
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<ul>
+					<li>email</li>
+					<li>linkedin</li>
+					<li>twitter</li>
+					<li>blog</li>
+				</ul>
+			</div>
+			<div class="pull-right">
+				Copyright CodeAcademy | 2016
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+<script type="text/javascript">
+	$("a").click(function(){
+		$(".active").removeClass("active");
+		$(this).parent().addClass("active");
+		var a = $(this).attr("name");
+		$(".selected").removeClass("selected");
+		$(a).addClass("selected");
+	});
+</script>
+</html>

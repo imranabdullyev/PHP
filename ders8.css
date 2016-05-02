@@ -1,0 +1,16 @@
+.crazyDiv{
+	width: 300px;
+	height: 200px;
+	background: cyan;
+}
+.PDiv{
+	width:auto;
+	height: auto;
+	margin:10px;
+
+}
+.PDiv img{
+	margin: 10px;
+	width: 100px;
+	height: 100px;
+}

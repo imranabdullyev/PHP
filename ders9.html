@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <style>
+  img{
+		float: left;
+    width: 300px;
+    height: 300px;
+  }
+	body{
+		display: inline;
+	}
+  </style>
+</head>
+<body>
+<button onclick="adding()">add</button>
+  <script>
+    var images=["images/01.jpg","images/02.jpg","images/03.jpg","images/04.jpg","images/05.jpg"];
+    var k=0;
+    function adding(){
+     	var br=document.createElement("br");
+    	var image=document.createElement("img");
+    	image.setAttribute("src",images[k]);
+    	if(k%3==0){
+  		document.body.appendChild(br);
+        }
+        document.body.appendChild(image);
+				k++;
+        if (k==images.length) {
+						k=0;
+        }
+      }
+			
+
+  </script>
+</body>
+</html>

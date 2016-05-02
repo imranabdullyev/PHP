@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="ev_isiSlider_NAVBAR.css">
+	<title></title>
+</head>
+<body>
+
+<!--<div class="um">
+	<div class="big">
+		<img id="big" src="images/02.jpg">
+	</div>
+	<div class="btns">
+			<div><</div>
+			<div>></div>
+	</div>
+	<div class="clearFix"></div>
+		<div class="bot1">
+			<img src="images/01.jpg">
+		</div>
+		<div class="bot2">
+			<img src="images/03.jpg">
+		</div>
+		<div class="bot3">
+			<img src="images/04.jpg" >
+		</div>
+		<div class="bot4">
+			<img src="images/05.jpg">
+		</div>
+</div>-->
+<script>
+//===============================NAVBAR=====================================\\
+function navbar(a){
+	document.write("<ul>");
+	for (var i = 0; i < 1; i++) {
+  document.write("<li><a href='#'>"+a+"</a></li>")
+	}
+	document.write("<ul>");
+}
+navbar("Ana sehife");
+navbar("Haqqimizda");
+navbar("Qalireya");
+navbar("Mehsullar");
+navbar("Xidmetler");
+navbar("Elaqe");
+navbar("Istifadeciler");
+//=================================NAVBAR=====================================\\
+
+
+
+
+//=================================SLIDER=====================================\\
+
+	var images=["images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg","images/5.jpg"];
+ //=============SIDER DIV================\\
+var mainDiv=document.createElement("div");
+	mainDiv.setAttribute("class","um");
+//=============SIDER DIV================\\
+
+
+
+//==============LEFT DIV================\\
+var LeftDiv=document.createElement("div");
+	LeftDiv.setAttribute("class","left");
+	LeftDiv.setAttribute("onclick","slidium2()");
+	mainDiv.appendChild(LeftDiv);
+//==============LEFT DIV================\\
+
+
+
+//=============RIGHT DIV================\\
+var RightDiv=document.createElement("div");
+	RightDiv.setAttribute("class","right");
+	mainDiv.appendChild(RightDiv);
+	RightDiv.setAttribute("onclick","slidium1()");
+//=============RIGHT DIV================\\
+
+
+//=============SIDER IMAGE================\\
+var topImg=document.createElement("img");
+	topImg.setAttribute("id","img1");
+	topImg.setAttribute("src","images/1.jpg");
+	mainDiv.appendChild(topImg);
+	document.body.appendChild(topImg);
+	document.body.appendChild(mainDiv);
+//=============SIDER IMAGE================\\
+
+
+
+
+//=============BOTTOM DIV================\\
+	for ( i=0; i<images.length;i++) {
+		var botDiv=document.createElement("div");
+		botDiv.setAttribute("id","bot");
+		document.body.appendChild(botDiv);
+		mainDiv.appendChild(botDiv);
+		//=============BOTTOM DIV================\\
+		//=============BOTTOM IMAGE================\\
+		var botImg=document.createElement("img");
+		botImg.setAttribute("class","botImg1");
+		botImg.setAttribute("src",images[i]);
+		document.body.appendChild(botImg);
+		botDiv.appendChild(botImg);
+	}
+	//=============BOTTOM IMAGE================\\
+
+var	q=0;
+function slidium1(){
+	if(q==images.length-1){
+	q=0;
+	}
+	q++;
+
+	document.getElementById("img1").src=images[q];
+
+}
+
+
+function slidium2(){
+	if(q<0){
+		q=images.length-1;
+	}
+	document.getElementById("img1").src=images[q];
+	q--;
+
+}
+//=================================SLIDER=====================================\\
+
+</script>
+</html>
+</body>

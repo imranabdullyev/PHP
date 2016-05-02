@@ -1,0 +1,138 @@
+html, body {
+  margin: 0;
+}
+
+h1, h2, a {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/* Main */
+.main {
+  text-align: center;
+  height: 600px;
+  background: url("../images/bg.jpg");
+  background-size: 100%;
+  background-position: 0 70%;
+  overflow: hidden;
+}
+
+.main .container {
+  position: relative;
+  top: 30px;
+}
+
+.main .container h1{
+  font-size: 150px;
+  color: white;
+}
+.container p{
+  color: white;
+  font-size: 15px;
+  margin-top:-80px;
+}
+.container input{
+  height: 30px;
+  width:230px;
+  padding: 5px 10px;
+  margin-top: 5px; 
+  font-family: 'Oswald', sans-serif;
+}
+
+
+/* Supporting */
+.supporting {
+  background-color: #1c1c1c;
+  text-align: center;
+  padding: 50px 0 180px;
+}
+.supportCustom{
+ width: 750px;
+ height: auto;
+ margin: 0 auto;
+ }
+.supportContent{
+float: left;
+text-align: center;
+width: 250px;
+
+}
+.supportContent h2{
+  color: gold;
+}
+.supportContent p{
+  color: white;
+}
+.clearfix {
+  clear: both;
+}
+
+/* Feature */
+.feature {
+  height: 600px;
+  text-align: center;
+  padding: 0 20px;
+  background: url("../images/feature.jpg");
+  background-size: 100%;
+  background-position: 0 70%;
+  overflow: hidden;
+}
+.feature .container h1{
+
+  font-size: 70px;
+  color: white;
+}
+
+.correctionFeature{
+  margin-top: -30px;
+  width: 250px; !important
+}
+.learnMore{
+  width: 180px;
+  height: 40px;
+  color: black;
+  background-color: white;
+  text-align: center;
+  line-height: 40px;
+    font-family: 'Oswald', sans-serif;
+    margin: 0 auto;
+}
+.feature .container {
+  position: relative;
+  top: 200px;
+}
+
+/* Footer */
+
+.footer {
+  height: 600px;
+  text-align: center;
+  padding: 0 20px;
+  background: url("../images/footer.jpg");
+  background-size: 100%;
+  background-position: 0 70%;
+  overflow: hidden;
+}
+.startNow{
+  width: 150px;
+  height: 35px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  line-height: 35px;
+  font-family: 'Oswald', sans-serif;
+  margin: 0 auto;
+}
+.footer .container{
+  position: relative;
+  top: 200px;
+}
+.footer .container h1{
+  font-size: 60px;
+  color: white;
+}

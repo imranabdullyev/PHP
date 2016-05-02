@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<link rel="stylesheet" href="analoq_saat.css" media="screen" charset="utf-8">
+</head>
+<body>
+<script type="text/javascript">
+
+	var analoq=document.createElement("div");
+  analoq.setAttribute("class","dumru");
+  document.body.appendChild(analoq);
+
+  var analoqSekil=document.createElement("img");
+  analoqSekil.setAttribute("src","saat.png");
+  analoqSekil.setAttribute("class","imagine");
+  analoq.appendChild(analoqSekil);
+
+  var orta=document.createElement("div");
+  orta.setAttribute("id","uc1");
+  analoq.appendChild(orta);
+
+  var saniye=document.createElement("div");
+  saniye.setAttribute("id","uc2");
+
+  analoq.appendChild(saniye);
+
+  var dakka=document.createElement("div");
+  dakka.setAttribute("id","uc3");
+  analoq.appendChild(dakka);
+
+  var saat=document.createElement("div");
+  saat.setAttribute("id","uc4");
+  analoq.appendChild(saat);
+
+
+	function Huseyn(){
+    var Murad=new Date();
+    var saat= 30* Murad.getHours();
+    document.getElementById("uc4").style.WebkitTransform = "rotate("+saat+"deg)";
+    var dakka=  Murad.getMinutes()/60*360;
+    document.getElementById("uc3").style.WebkitTransform = "rotate("+dakka+"deg)";
+		var saniye= 6* Murad.getSeconds();
+		document.getElementById("uc2").style.WebkitTransform = "rotate("+saniye+"deg)";
+
+	}
+		setInterval(Huseyn,1000);
+
+</script>
+</body>
+</html>

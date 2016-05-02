@@ -1,0 +1,118 @@
+
+.um{
+	position: absolute;
+	top:70px;
+	left:220px;
+	background-color:darkcyan;
+	width:960px;
+	height: 675px;
+}
+#img1{
+	float: left;
+	position: absolute;
+	top: 80px;
+	left: 245px;
+	width: 910px;
+	z-index: 2;
+	height: 465px;
+}
+#bot{	position: relative;
+	top: 487px;
+	float: left;
+	margin:0px 5px;
+	width: 182px;
+	height: 180px;
+}
+.botImg1{
+	width: 182px;
+	height: 180px;
+}
+.left{
+	position: absolute;
+	left:0px;
+	background-color:rgb(0, 120, 147);
+	width:25px;
+	height: 475px;
+	z-index: 13;
+}
+.right{
+		z-index: 15;
+		position: absolute;
+		right:0px;
+		background-color:rgb(0, 120, 147);
+		width:	25px;
+		height: 475px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.bot2{
+	width: 145px;
+	margin:5px 6px;
+	height: 100px;
+	float: left;}
+.bot2 img{
+	width: 145px;
+	height: 100px;
+}
+.bot3{width: 145px;
+	margin:5px 6px;
+	height: 100px;
+	float: left;}
+
+.bot3 img{
+	width: 145px;
+	height: 100px;
+}
+.bot4{width: 145px;
+	margin:5px 4px;
+	margin-right: 0px;
+	height: 100px;
+	float: left;}
+
+.bot4 img{
+	width: 145px;
+	height: 100px;
+}
+.btns div{
+	position:absolute;
+	height:620px;
+	padding:0 10px;
+	font-family:Calibri;
+	font-size:3em;
+	font-weight: bold;	background:darkcyan;
+	color:white;
+	width:20px;
+}
+.btns div:first-child{
+	top:0px;
+	left:-40px;
+	line-height:600px;
+}
+.btns div:last-child{
+	top:0px;
+	right:-40px;
+	line-height:600px;
+}*/
+ul li{
+  background-color:dimgrey;
+  float:left;
+  padding:10px 20px;
+  list-style:none;
+
+}
+li a{
+	color:lightblue;
+	font-size: 16px;
+  text-decoration:none;
+}

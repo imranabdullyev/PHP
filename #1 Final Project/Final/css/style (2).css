@@ -1,0 +1,59 @@
+body{
+  background-image:url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+.wrapper {
+  margin: 200px;
+  left: 300px;
+}
+
+  .spancik {
+   text-align: left;
+   font-size: 50px;
+   font-family: 'verdana', serif;
+   color: white;
+}
+
+ .text {
+   font-size: 50px;
+   color: white;
+   font-family: verdana;
+ }
+span.cursor {
+   font-size: 50px;
+   -webkit-animation: blink 0.7s infinite;
+   -moz-animation: blink 0.7s infinite;
+   animation: blink 0.7s infinite;
+   color: white;
+ }
+
+ @media (max-width: 768px) {
+   .wrapper {
+     h1 {
+       font-size: 34px;
+     }
+     h3 {
+       font-size: 28px;
+     }
+     span {
+       font-size: 22px;
+     }
+     .social {
+       i {
+         font-size: 22px;
+       }
+       a {
+         margin: 5px;
+       }
+       text-align: center;
+     }
+   }
+ }
+
+ @keyframes blink {
+   0% {opacity: 1;}
+   50% {opacity: 0;}
+   100% {opacity: 1;}
+ }

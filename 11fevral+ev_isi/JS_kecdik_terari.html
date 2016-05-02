@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vurma cedveli</title>
+</head>
+
+<body>
+<style>
+	*{
+	border-sizing:box-border;
+	}
+		.bredo{
+			padding: 0px;
+			margin: 0px;
+			background-color:rgb(76, 164, 227);
+			height: auto;
+			width: 456px;
+			border: 1px solid blue
+;}
+		div {
+			border: 1px solid red;
+			display:inline;
+			background-color: azure;
+			width: 148px;
+			height: 150px;
+			margin:1px;
+			padding: 0;
+			float: left;}
+	</style>
+	<script>
+
+	function bir(){
+		for(d=1;d<=200;d++){
+		var uc=d%3;
+		var bes=d%5;
+			if(uc==0&&bes==0){
+       	document.write(d+", ");}
+       }
+   }
+	bir();
+
+function iki(a) {
+			document.write("<div class=bredo>");
+			for (i=1;i<=a;i++) {
+				document.write("<div>");
+				document.write("</div>");
+			}
+			document.write("</div>");
+		}
+		iki(9);
+	</script>
+</body>
+
+</html>

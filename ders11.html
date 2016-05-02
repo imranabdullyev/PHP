@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <link rel="stylesheet" href="ders11.css" media="screen" charset="utf-8">
+
+</head>
+<body>
+     <input type="text" id="Ad" placeholder="Adiniz"><br>
+     <input type="text"  id="Soyad" placeholder="Soyadiniz"><br>
+     <input type="text"  id="Yas" placeholder="Yasiniz"><br>
+		 <br>
+<button onclick="yarat()">send </button>
+<table border="1" >
+	<thead>
+	<tr>
+		<td>Ad</td>
+		<td>Soyad</td>
+		<td>Yas</td>
+	</tr>
+</thead>
+<tbody>
+
+</tbody>
+</table>
+
+<script>
+function yarat(){
+var Name=document.getElementById("Ad").value;
+var Surname=document.getElementById("Soyad").value;
+var Age=document.getElementById("Yas").value;
+
+var setir=document.createElement("tr");
+var sira1=document.createElement("td");
+var sira2=document.createElement("td");
+var sira3=document.createElement("td");
+sira1.innerHTML=Name;
+sira2.innerHTML=Surname;
+sira3.innerHTML=Age;
+setir.appendChild(sira1);
+setir.appendChild(sira2);
+setir.appendChild(sira3);
+document.getElementsByTagName("tbody")[0].appendChild(setir);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="ders13.css">
+	<script type="text/javascript" src="jquery-2.2.1.js"></script>
+	<style type="text/css">
+	
+	div{
+		display: none;
+	}
+	.active{
+		border: 1px solid black;
+	}
+	</style>
+
+</head>
+<body>
+	<ol>
+		<li name="#dude1" class="active">tab1</a></li>
+		<li name="#dude2">tab2</li>
+		<li name="#dude3">tab3</li>
+		<li name="#dude4">tab4</li>
+	</ol>
+
+		<div id="dude1" style="display:block;">jbhljhjhvkj</div>
+		<div id="dude2">hbjhbv</div>
+		<div id="dude3">igiugpiug</div>
+		<div id="dude4">igupigu</div>
+	
+
+	    <div id="mainPic"></div>
+		<div id="pics"></div>
+
+
+
+
+
+
+
+
+</body>
+<script type="text/javascript">
+ 	$("li").click(function () {
+	  $("div").hide();
+	  $($(this).attr('name')).show();
+	  $(".active").removeClass("active");
+	  $(this).addClass("active");
+
+});
+
+
+
+
+
+</script>
+</html>

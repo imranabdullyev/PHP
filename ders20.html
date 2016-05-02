@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<link rel="stylesheet" type="text/css" href="ders.JQ_test.css">
+<link href='https://fonts.googleapis.com/css?family=Cinzel:700,900' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="jquery-2.2.1.js"></script>
+</head>
+<body>
+	<div class="main">
+		<div class="na">
+
+			<ul>
+			
+				<li><a id="bu" href="#bu">sen</a></li>
+
+				<li><a id="duz" href="#duz">biz</a></li>
+
+				<li><a id="duzu" href="#duzu">siz</a></li>
+	
+			</ul>
+		</div>
+
+		<div class="space"></div>	
+
+		<div class="qali">
+
+			<div class="bir"><img  src="imagesJS/1.jpg"></div>
+			<div class="bir"><img src="imagesJS/2.jpg"></div>
+			<div class="bir"><img src="imagesJS/3.jpg"></div>
+			<div class="iki"><img src="imagesJS/4.jpg"></div>
+			<div class="iki"><img src="imagesJS/5.jpg"></div>
+			<div class="iki"><img src="imagesJS/6.jpg"></div>
+			<div class="uc"><img src="imagesJS/7.jpg"></div>
+			<div class="uc"><img src="imagesJS/8.jpg"></div>
+			<div class="uc"><img src="imagesJS/9.jpg"></div>	
+	
+		</div>
+	</div>
+
+</body>
+
+<script>
+
+	$(document).ready(function(){
+		$( "#bu" ).click(function() {
+  		$( ".bir" ).animate({opacity: 0.7}, 500);
+  		$( ".bir" ).animate({opacity: 1}, 500);
+	});
+		$( "#duz" ).click(function() {
+  		$( ".iki" ).animate({opacity: 0.7}, 500);
+  		$( ".iki" ).animate({opacity: 1}, 500);
+	});
+		$( "#duzu" ).click(function() {
+  		$( ".uc" ).animate({opacity: 0.7}, 500);
+  		$( ".uc" ).animate({opacity: 1}, 500);
+	});
+	});		
+
+
+</script>
+</html>

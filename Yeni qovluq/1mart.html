@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="1mart.css">
+	<script type="text/javascript" src="jquery-2.2.1.js"></script>
+</head>
+<body>
+<div class="mainSlide">
+	<div class="mainWrapper">
+
+	</div>
+</div>
+<div class="test">+</div>
+<div class="test2">-</div>
+<script type="text/javascript">
+var userSpeed = 1000;
+var userColumn = 10;
+for (i = 0; i < userColumn; i++){
+var innerWrapper = document.createElement("div");
+innerWrapper.setAttribute("class", "innerWrapper");
+document.getElementsByClassName("mainWrapper")[0].appendChild(innerWrapper);
+}
+
+$( ".test" ).click(
+	function() {
+	if(parseInt($('.mainWrapper').css('marginLeft')) > -1436){
+
+	console.log(parseInt($('.mainWrapper').css('marginLeft')));
+  	$( ".mainWrapper" ).animate({
+    marginLeft: "-=240px"
+  }, userSpeed, function() {
+  });
+}
+});
+
+$( ".test2" ).click(
+	function() {
+	if(parseInt($('.mainWrapper').css('marginLeft')) < 0){
+	console.log(parseInt($('.mainWrapper').css('marginLeft')));
+  	$( ".mainWrapper" ).animate({
+    marginLeft: "+=242px"
+  }, userSpeed, function() {
+  });
+}
+});
+
+</script>
+</body>
+</html>

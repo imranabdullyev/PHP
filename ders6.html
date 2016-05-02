@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		table{
+		border-collapse: collapse;
+		width: 300px;
+		height: 200px;
+	}
+	td{
+		border:1px solid black;
+		padding: 5px 25px; 
+
+	}
+	</style>
+</head>
+<body>
+<script type="text/javascript">
+/*
+var sinif=["a","b","c","d"];
+for (var i = 0; i < sinif.length; i++) {
+	document.write(sinif[i]+"<br>")
+}*/
+		var vahab=["Vahab","Veliyev",18];
+		var cem=0;
+		var knyaz=["Knyaz","Yaqubov",26];
+		var imran=["Imran","Abdullayev",26];
+		var celil=["Celil","Tagizade",24]
+		// var classmates=["Vahab","Kerim","Knyaz"];
+		// var yas=[18,26,19];
+		var sinif=[vahab,knyaz,imran,celil];
+		document.write("<table>");
+		 	for(i=0; i<sinif.length;i++){
+		 		document.write("<tr>");
+		 			cem=cem+sinif[i][2];
+		 			for(k=0; k<vahab.length; k++){
+		 				document.write("<td>"+sinif[i][k]+"</td>");
+		 			}
+		 		document.write("</tr>")
+		 }
+		document.write("</table>");
+		document.write("Telebelerin yaslarinin cemi "+cem+"dir");
+
+
+</script>
+</body>
+</html>

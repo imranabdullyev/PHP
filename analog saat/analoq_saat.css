@@ -1,0 +1,62 @@
+.dumru{
+  width: 550px;
+  height: 550px;
+  border-radius:100%;
+
+  margin:0 auto;
+  position: relative;
+  
+}
+.imagine{
+  width: 550px;
+  height: 550px;
+ }
+
+#uc1{
+border: 5px solid   rgb(153, 136, 235);
+position: absolute;
+width: 30px;
+height:30px;
+border-radius: 10px;
+border-radius:100%;
+z-index: 10;
+position: absolute;
+top: 254px;
+left: 254px;
+background-color:darkcyan;
+}
+#uc2{
+
+position: absolute;
+z-index: 4;
+left: 272.5px;
+top: 32px;
+width: 2px;
+height: 243px;
+background-color:red;
+transform-origin:bottom;
+
+}
+#uc3{
+position: absolute;
+z-index: 3;
+left: 271px;
+top: 41px;
+width: 5px;
+height: 234px;
+background-color:lightgreen;
+transform-origin:bottom;
+
+}
+#uc4{
+position: absolute;
+border-top: 15px;
+z-index: 2;
+left: 266px;
+top: 80px;
+width: 15px;
+height: 195px;
+background-color:black ;
+transform-origin:bottom;
+
+}

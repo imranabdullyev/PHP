@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="ders19.css">
+		<style type="text/css">
+		div {
+			height: auto;
+			text-align: center;
+		}
+		/*table{border: 1px solid black;}
+	td{border: 1px solid black;
+		width: 100px;}
+	tr{border: 1px solid black;}*/
+	</style>
+</head>
+
+<body>
+	
+	<!--<div class=1>
+	<div>*</div>
+	<div>**</div>
+	<div>****</div>
+	<div>******</div>
+	<div>********</div>	
+	<div>***********</div>		
+	<div>********</div>	
+	<div>******</div>
+	<div>****</div>
+	<div>**</div>
+	<div>*</div>
+</div>-->
+
+
+
+
+
+
+	<script type="text/javascript">
+		function bir(a) {
+			document.write("<div class=1>");
+			for (i = 1; i < a; i++) {
+				document.write("<div>");
+				for (j = 1; j < i; j++) {
+					document.write("*");
+				}
+				document.write("</div>");
+			}
+			for (i = 1; i < a; i++) {
+				document.write("<div>");
+				for (j = a; j>i; j-=1) {
+					document.write("*");
+				}
+				document.write("</div>");
+			}
+			document.write("</div>");
+		}
+		bir(15);
+
+		/*alert("Shall we,then?");
+		prompt("Tell me everything you know.", "...");
+
+		var theNumber = Number(prompt("Выбери число", ""));
+		alert("sizin ededin kvadrati " + theNumber*theNumber+"dir");*/
+		/*function cedvel(a,b){
+			document.write("<table>");
+		for(i=0;i<a;i++){
+			document.write("<tr>");
+		        for(j=0;j<b;j++){
+		        	document.write("<td>"+i+" inci setir"+j+ " inci sütun</td>");
+		        }
+			document.write("</tr>");
+
+		}
+		document.write("</table>");
+		}
+		cedvel(10,5);*/
+	</script>
+</body>
+
+</html>
